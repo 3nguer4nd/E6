@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="E6 - Gantt" company="" webLink="http://" view-date="2025-03-30" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
+    <description><![CDATA[Déroulement de la conception de l'infrastcture pour l'épreuve E6.]]></description>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#6666ff #ccffff #ccccff #9999ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="5b8136e378e1450f8b1705ae9761aba3" name="Création d'un dépôt GitHub" color="#ccccff" meeting="false" start="2025-04-02" duration="1" complete="100" expand="true">
+            <notes><![CDATA[https://github.com/3nguer4nd/E6]]></notes>
+        </task>
+        <task id="1" uid="2c3c29b219d24b65a4c1f5aefba02b4c" name="Création d'un fichier KeePass" color="#ccccff" meeting="false" start="2025-04-02" duration="1" complete="100" expand="true">
+            <notes><![CDATA[E6 - mdp.kdbx]]></notes>
+        </task>
+        <task id="2" uid="6ea68c4dc6824a0bba773bc60d28d353" name="Création d'un fichier Gantt" color="#ccccff" meeting="false" start="2025-04-02" duration="1" complete="100" expand="true"/>
+        <task id="3" uid="fa22d7e1476645d0abaf4b418ac54f67" name="Installer Proxmox" color="#ccffff" meeting="false" start="2025-04-02" duration="63" complete="0" expand="true">
+            <notes><![CDATA[Installation de Proxmox sur un serveur mis à disposition, via une clé USB bootable.]]></notes>
+        </task>
+        <task id="4" uid="3376ca3d1b9c4f9faa92b4dd7c527813" name="Dépôt des ressources E5 - E6" color="#6666ff" meeting="false" start="2025-04-16" duration="1" complete="0" expand="true">
+            <notes><![CDATA[E5
+- Tableau de synthèse définitif
+- Lien vers votre portfolio accessible en ligne directement sur la tableau de synthèse via le site https://btssio.org/
+- Attestation de travail de moins de 3 mois
+
+E6
+- Les deux fiches descriptives de vos réalisations
+- Le dossier technique en lien avec vos réalisations]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
