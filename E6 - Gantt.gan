@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="E6 - Gantt" company="" webLink="http://" view-date="2025-03-30" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="E6 - Gantt" company="" webLink="http://" view-date="2025-03-01" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
     <description><![CDATA[Déroulement de la conception de l'infrastcture pour l'épreuve E6.]]></description>
-    <view zooming-state="default:7" id="gantt-chart">
+    <view zooming-state="default:9" id="gantt-chart">
         <field id="tpd3" name="Name" width="200" order="0"/>
         <field id="tpd4" name="Begin date" width="75" order="1"/>
         <field id="tpd5" name="End date" width="75" order="2"/>
@@ -9,7 +9,7 @@
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#6666ff #ccffff #ccccff #9999ff]]></option>
+        <option id="color.recent"><![CDATA[#99ff99 #ccffff #99ffff #ccffcc #6666ff #ccccff #9999ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -46,10 +46,10 @@
             <notes><![CDATA[E6 - mdp.kdbx]]></notes>
         </task>
         <task id="2" uid="6ea68c4dc6824a0bba773bc60d28d353" name="Création d'un fichier Gantt" color="#ccccff" meeting="false" start="2025-04-02" duration="1" complete="100" expand="true"/>
-        <task id="3" uid="fa22d7e1476645d0abaf4b418ac54f67" name="Installer Proxmox" color="#ccffff" meeting="false" start="2025-04-02" duration="63" complete="0" expand="true">
+        <task id="3" uid="fa22d7e1476645d0abaf4b418ac54f67" name="Installation de Proxmox" color="#ccffff" meeting="false" start="2025-04-02" duration="9" complete="100" expand="true">
             <notes><![CDATA[Installation de Proxmox sur un serveur mis à disposition, via une clé USB bootable.]]></notes>
         </task>
-        <task id="4" uid="3376ca3d1b9c4f9faa92b4dd7c527813" name="Dépôt des ressources E5 - E6" color="#6666ff" meeting="false" start="2025-04-16" duration="1" complete="0" expand="true">
+        <task id="4" uid="3376ca3d1b9c4f9faa92b4dd7c527813" name="Dépôt des ressources E5 - E6" color="#6666ff" meeting="false" start="2025-04-16" duration="1" complete="100" expand="true">
             <notes><![CDATA[E5
 - Tableau de synthèse définitif
 - Lien vers votre portfolio accessible en ligne directement sur la tableau de synthèse via le site https://btssio.org/
@@ -58,6 +58,24 @@
 E6
 - Les deux fiches descriptives de vos réalisations
 - Le dossier technique en lien avec vos réalisations]]></notes>
+        </task>
+        <task id="5" uid="1e2336eb840d40dea0edbe0b533e914f" name="Virtualisation de pfSense" color="#ccffcc" meeting="false" start="2025-04-30" duration="1" complete="100" expand="true">
+            <notes><![CDATA[- Upload l’ISO de pfSense sur le serveur Proxmox
+- Création d’une machine virtuelle pfSense. 
+	IP WAN actuelle : 172.23.45.124/12
+	IP LAN actuelle : 192.168.1.1/24
+]]></notes>
+        </task>
+        <task id="6" uid="d456b9c1242042709b311263a1e6a701" name="Création d'une VM Debian test" color="#ccffcc" meeting="false" start="2025-04-30" duration="1" complete="100" expand="true">
+            <notes><![CDATA[Installation de la VM debian-test, va servir à accéder à l’interface web de mon pfSense.]]></notes>
+        </task>
+        <task id="7" uid="bdb9482322ec458c8aef162530918afd" name="Paramétrage Switch Physique" color="#ccffff" meeting="false" start="2025-05-05" duration="1" complete="100" expand="true">
+            <notes><![CDATA[Paramétrage du switch physique, attribution des VLANs aux ports.]]></notes>
+        </task>
+        <task id="8" uid="d9dcb48351ed49298cbe72ecf7b0fa13" name="Virtualisation des 3 services" color="#99ff99" meeting="false" start="2025-05-21" duration="3" complete="100" expand="true">
+            <notes><![CDATA[- Création de 3 machines virtuelles Debian12
+- Installation de Docker et Portainer
+- Mise en place de LibreNMS ; Zabbix et Grafana via Portainer et les fichiers docker.compose.yml.]]></notes>
         </task>
     </tasks>
     <resources/>
